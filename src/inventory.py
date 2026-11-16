@@ -14,7 +14,7 @@ class Inventory:
         self.items = {}
 
     def add_item(self, name, price, qty):
-        """Add a new item or increase the stock of an existing one."""
+        """Add a new item or increase the stock of another one."""
         if name in self.items:
             self.items[name]["qty"] += qty
         else:
